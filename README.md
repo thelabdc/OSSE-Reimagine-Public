@@ -1,29 +1,32 @@
-# OSSE-Reimagine
+# OSSE-Reimagine-Public
 
-@authors: [Rebecca Johnson](rebecca.johnson@dc.gov), [Josephine Freis](josephine.freis@dc.gov), [Josh Hall](josh.hall@dc.gov), [Oriana Ma](oriana.ma@dc.gov)
+@authors: [Rebecca Johnson](rebecca.johnson@dc.gov), [Ryan Moore](ryan.moore2@dc.gov)
 
 ## Introduction
 
-This repo contains ...
+This repo contains code relevant for the pre-analysis plan for Reimagining DC High Schools.
 
-The analysis was pre-registered on the Open Science Framework (OSF) 
-[here](OSF URL).  The final report is [here](link).
+- [Project page](https://thelabprojects.dc.gov/reimagine-dc-high-schools)
 
 
 #### Requirements:
 
-The primary modules used here for Python are ...
-The primary packages used here for R are ...
-The relevant packages and modules are included at the top of each Python script, 
-R script, and Jupyter notebook.
+For the power code, relevant packages are listed at the beginning of the script. They are reproduced here:
+
+```
+library(estimatr)
+library(here)
+library(reshape2)
+library(scales)
+library(tidyverse)
+```
+
 
 ## Organization
 
-The repo is organized in four primary directories:
+The repo is organized in two primary directories:
 
 - `code`
-- `data`
-- `docs`
 - `figs`
 
 Additionally, this repository includes `README`, `.gitignore`, and `.Rproj` 
@@ -33,29 +36,13 @@ files.
 
 This directory includes these files:
 
-[00_estimatepower.R](https://github.com/thelabdc/OSSE-Reimagine/blob/main/code/00_estimatepower.R)
-- Takes in: parameters on sample size and base rates for the survey and administrative data outcomes
-- What it does: uses simulation to estimate the statistical power at different hypothetical effect sizes/scenarios involving the matching/weighting process and response rates
+[00_estimatepower.R](https://github.com/thelabdc/OSSE-Reimagine-Public/blob/main/code/00_estimatepower.R)
+- Takes in:
+  - Parameters on sample size and base rates for the survey and administrative data outcomes
+- What it does:
+  - Uses simulation to estimate the statistical power at different hypothetical effect sizes/scenarios involving the matching/weighting process and survey response rates
+  - These simulations cover both the administrative data outcomes and the survey data outcomes
 - Outputs:
   - `figs/power_curve.png`: power curve
 
 
-## `/data/`
-
-Links for the open data sets analyzed are below.
-
-* [Description 1](Link1)
-
-The code below can be used to get these data sets.
-
-```bash
-wget https://  [here]
-```
-
-### Sensitive data
-
-Several data sets are are _not_ included in this repository due to the sensitive nature of the data.  They include
-
-## `/docs/`
-
-## `/figs/`
