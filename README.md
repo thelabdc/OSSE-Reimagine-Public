@@ -1,20 +1,6 @@
-# AAA-ProjectDescription
+# OSSE-Reimagine
 
-Authors, after copying this template, please
-
-- [ ] Complete the name of `AAA-ProjectDescription` above, where `AAA` is the 
-agency abbreviation, and `ProjectDescription` is a short description of the 
-project in Pascal case.  For example, `DHS-DCFlex`.
-- [ ] Change the name of the `.Rproj` file from `Template.Rproj` to 
-`AAA-ProjectDescription.Rproj`.  Do so with `git mv Template.Rproj AAA-ProjectDescription.Rproj`.
-- [ ] Complete or remove the sections below, as appropriate.
-- [ ] Git-remove the `empty.txt` file in each directory after you commit a file 
-in that directory.  To git-remove the empty file in `/docs/`, e.g., use 
-`git rm docs/empty.txt`.
-- [ ] Delete this block of text that is not part of your project.
-
-
-@authors: [Author1](author.email@dc.gov), [Author2](author2@dc.gov)
+@authors: [Rebecca Johnson](rebecca.johnson@dc.gov), [Josephine Freis](josephine.freis@dc.gov), [Josh Hall](josh.hall@dc.gov), [Oriana Ma](oriana.ma@dc.gov)
 
 ## Introduction
 
@@ -47,8 +33,12 @@ files.
 
 This directory includes these files:
 
-- `01-description.py` (short description here)
-- `02-description.R` (short description here)
+[00_estimatepower.R](https://github.com/thelabdc/OSSE-Reimagine/blob/main/code/00_estimatepower.R)
+- Takes in: parameters on sample size and base rates for the survey and administrative data outcomes
+- What it does: uses simulation to estimate the statistical power at different hypothetical effect sizes/scenarios involving the matching/weighting process and response rates
+- Outputs:
+  - `figs/power_curve.png`: power curve
+
 
 ## `/data/`
 
